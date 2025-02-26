@@ -28,4 +28,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: rajeshprasanth/simplified-dashboard:latest
+          tags: your-dockerhub-username/your-image-name:latest
