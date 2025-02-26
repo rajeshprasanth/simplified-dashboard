@@ -113,5 +113,5 @@ Contributions are welcome! If you would like to enhance the project, please subm
 
 ## License
 
-i ne
+This project is licensed under the GNU General Public License v3.0. See the LICENSE file for details.
 
