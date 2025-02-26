@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simplified Home Lab Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+</head>
+<body class="container mt-4">
+    <h1 class="text-primary text-center">Simplified Home Lab Dashboard</h1>
+    <p class="text-center"><small>(Link 1: Proxified Address, Link 2: FQDN Address, Link 3: Direct IP Address)</small></p>
+
+    <table class="table table-bordered table-striped text-center">
+        <thead class="table-light">
+            <tr>
+                <th class="text-center">Resource Names/Services</th>
+                <th class="text-center">Links</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for resource in resources %}
+            <tr>
+                <td class="text-start">{{ resource.name }}</td>
+                <td>
+                    <a href="{{ resource.link1 }}">Link 1</a> |
+                    <a href="{{ resource.link2 }}">Link 2</a> |
+                    <a href="{{ resource.link3 }}">Link 3</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+</body>
+</html>

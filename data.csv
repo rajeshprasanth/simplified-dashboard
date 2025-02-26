@@ -1,0 +1,3 @@
+Resource Name,Link 1,Link 2,Link 3
+Grafana,https://grafanaprod.internal.das,https://plpmon002.internal.das:600,https://10.0.0.90:600
+Prometheus,https://prometheus.internal.das,https://plpmon003.internal.das:9090,https://10.0.0.91:9090
