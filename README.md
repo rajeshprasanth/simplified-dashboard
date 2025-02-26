@@ -1,5 +1,7 @@
 # Simplified Home Lab Dashboard
+
 ![GitLab Pipeline Status](https://gitlab.com/rajeshprasanth/simplified-dashboard/badges/main/pipeline.svg)
+
 The **Simplified Home Lab Dashboard** is a lightweight Flask-based web application that dynamically loads and displays resource links from a CSV file using a Bootstrap-powered interface. The application supports local execution, deployment via Docker, and remote image retrieval from Docker Hub.
 
 ## Features
